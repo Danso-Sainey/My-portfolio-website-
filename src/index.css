@@ -1,0 +1,142 @@
+/* Light theme */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --text-secondary: #555;
+  --link: #0077cc;
+  --accent: #005fa3;
+  --border: #ddd;
+  --sidebar-bg: #f8f8f8;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --text: #eee;
+  --text-secondary: #aaa;
+  --link: #4da8ff;
+  --accent: #80c0ff;
+  --border: #333;
+  --sidebar-bg: #1e1e1e;
+}
+
+
+/* Global application */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3, p, li, a, span, button {
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.home-image img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 calc(33% - 20px);
+  background: var(--sidebar-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 15px;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  main, section {
+    margin-left: 240px;
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.highlight {
+  background: linear-gradient(90deg, #007BFF, #00C9A7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.4);
+}
+
+.home-section {
+  position: relative;
+  overflow: hidden;
+}
+

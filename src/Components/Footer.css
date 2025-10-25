@@ -1,0 +1,8 @@
+.footer {
+  background-color: #111; /* always dark */
+  color: #fff; /* always white text */
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease, color 0.3s ease;
+}

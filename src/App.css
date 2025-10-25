@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #002244;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 15px;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00aced;
+  transform: translateY(-2px);
+}
+
+/* Section */
+.section {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 60px 30px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Home */
+.home-section {
+  background: linear-gradient(135deg, #002244, #005b96);
+  color: white;
+  padding: 150px 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 20px 0;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.cv-button {
+  background: white;
+  color: #002244;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.cv-button:hover {
+  background: #00aced;
+  color: white;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-badge {
+  background: #e0f3ff;
+  color: #004c8c;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Timeline Lists */
+.timeline {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.timeline li {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #002244;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .section {
+    margin: 80px 10px;
+    padding: 40px 20px;
+  }
+  .hero-name {
+    font-size: 2rem;
+  }
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+}

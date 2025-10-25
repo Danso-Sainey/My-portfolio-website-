@@ -1,0 +1,19 @@
+.talk-keypoints {
+  margin-top: 1rem;
+}
+
+.talk-keypoints h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.talk-keypoints ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+.talk-keypoints li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
