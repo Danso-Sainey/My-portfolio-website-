@@ -1,6 +1,6 @@
 .navbar {
   background-color: var(--bg);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,10 +27,12 @@
   list-style: none;
 }
 
+/* Desktop links */
 .nav-links a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -43,20 +45,34 @@
   cursor: pointer;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
-  .menu-icon { display: block; }
+  .menu-icon {
+    display: block;
+  }
+
   .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 60px;
-    right: 0;
+    right: -100%; /* hidden by default */
     width: 60%;
+    flex-direction: column;
     background-color: var(--bg);
     border-left: 1px solid var(--border);
     padding: 20px;
+    gap: 15px;
+    list-style: none;
+    transition: right 0.3s ease;
+    height: 100vh;
   }
-  .nav-links.active { display: flex; }
+
+  .nav-links.active {
+    right: 0; /* slide in when active */
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
 }
 
 .theme-toggle {
@@ -66,4 +82,5 @@
   cursor: pointer;
   margin-left: 10px;
   color: var(--text);
+  transition: color 0.3s ease;
 }
