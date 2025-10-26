@@ -5,10 +5,13 @@ import "./Navbar.css";
 function Navbar({ toggleTheme, isDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+const handleLinkClick = () => setMenuOpen(false);
+
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h1 className="logo">Sainey DANSO</h1>
+        <h1 className="logo">SAINEY DANSO's Archive </h1>
 
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           ☰

@@ -49,7 +49,7 @@ function Home() {
 
         {/* Request CV Button */}
         <motion.a
-          href="mailto:danso.sainey@example.com?subject=Request%20for%20CV&body=Hello%20Sainey,%0D%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20CV.%0D%0A%0D%0ARegards,%0D%0A"
+          href="mailto:dansosainey4@gmail.com?subject=Request%20for%20CV&body=Hello%20Sainey,%0D%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20CV.%0D%0A%0D%0ARegards,%0D%0A"
           className="btn inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md font-semibold transition-transform transform hover:scale-105"
           whileHover={{ scale: 1.08 }}
         >
@@ -66,7 +66,7 @@ function Home() {
       >
         <img
           src={profile}
-          alt="Sainey DANSO"
+          alt="SAINEY DANSO"
           className="w-56 h-56 md:w-72 md:h-72 rounded-full shadow-2xl border-4 border-blue-600 dark:border-blue-400 object-cover"
         />
       </motion.div>

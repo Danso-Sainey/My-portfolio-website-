@@ -8,7 +8,7 @@ function Sidebar() {
     <aside className="sidebar">
       <img src={profile} alt="Sainey DANSO" className="sidebar-img" />
 
-      <h2 className="sidebar-name">Sainey DANSO</h2>
+      <h2 className="sidebar-name">SAINEY DANSO</h2>
       <p className="sidebar-pronouns">He/Him/His</p>
 
       <p className="sidebar-role">
