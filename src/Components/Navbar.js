@@ -18,15 +18,16 @@ const handleLinkClick = () => setMenuOpen(false);
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/experiences">Experiences</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/research">Research</Link></li>
-          <li><Link to="/talks">Talks</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contacts">Contacts</Link></li>
+         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+         <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+         <li><Link to="/experiences" onClick={() => setMenuOpen(false)}>Experiences</Link></li>
+         <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+         <li><Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link></li>
+         <li><Link to="/talks" onClick={() => setMenuOpen(false)}>Talks</Link></li>
+         <li><Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link></li>
+         <li><Link to="/contacts" onClick={() => setMenuOpen(false)}>Contacts</Link></li>
         </ul>
+
 
         {/* Toggle Button */}
         <button className="theme-toggle" onClick={toggleTheme}>
