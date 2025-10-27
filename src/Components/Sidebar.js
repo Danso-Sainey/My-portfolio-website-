@@ -6,7 +6,7 @@ import { Mail, MapPin, GraduationCap, Linkedin, Github, Facebook, BookOpen, Glob
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <img src={profile} alt="Sainey DANSO" className="sidebar-img" />
+      <img src={profile} alt="SAINEY DANSO" className="sidebar-img" />
 
       <h2 className="sidebar-name">SAINEY DANSO</h2>
       <p className="sidebar-pronouns">He/Him/His</p>
